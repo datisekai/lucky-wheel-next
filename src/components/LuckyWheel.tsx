@@ -15,6 +15,7 @@ const randomizeNumber = (number: number) => Math.floor(Math.random() * number);
 const props = {
     name: 'Workout',
     radius: 0.84,
+    pointerAngle: 0,
     itemLabelRadius: 0.93,
     itemLabelRadiusMax: 0.35,
     itemLabelRotation: 180,
@@ -32,47 +33,26 @@ const props = {
     overlayImage: createElementImage("https://crazytim.github.io/spin-wheel/examples/themes/img/example-0-overlay.svg"),
     items: [
         {
-            label: 'TWISTS',
+            image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
+            imageScale: 0.1,
+            label: "Quà 1"
         },
         {
-            label: 'PRESS UPS',
+            image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
+            imageScale: 0.1,
+            label: "Quà 1"
         },
         {
-            label: 'JOGGING',
+            image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
+            imageScale: 0.1,
+            label: "Quà 1"
         },
         {
-            label: 'SQUATS',
+            image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
+            imageScale: 0.1,
+            label: "Quà 1"
         },
-        {
-            label: 'PLANKS',
-        },
-        {
-            label: 'LUNGES',
-        },
-        {
-            label: 'BURPIES',
-        },
-        {
-            label: 'CRUNCHES',
-        },
-        {
-            label: 'MOUNT. CLIMB',
-        },
-        {
-            label: 'STAR JUMPS',
-        },
-        {
-            label: 'KANGAROOS',
-        },
-        {
-            label: 'ROPE CLIMB',
-        },
-        {
-            label: 'KICK BOXING',
-        },
-        {
-            label: 'WALL SIT',
-        },
+
     ],
 
 }
