@@ -12,7 +12,7 @@ const AlignText = Object.freeze({
 
 const props = {
     name: 'Workout',
-    radius: 0.84,
+    radius: 1,
     pointerAngle: 0,
     itemLabelRadius: 0.93,
     itemLabelRadiusMax: 0.35,
@@ -22,7 +22,7 @@ const props = {
     itemLabelBaselineOffset: -0.07,
     itemLabelFont: 'Amatic SC',
     itemLabelFontSizeMax: 55,
-    itemBackgroundColors: ['#ffc93c', '#66bfbf', '#a2d5f2', '#515070', '#43658b', '#ed6663', '#d54062'],
+    // itemBackgroundColors: ['#ffc93c', '#66bfbf', '#a2d5f2', '#515070', '#43658b', '#ed6663', '#d54062'],
     rotationSpeedMax: 500,
     rotationResistance: -100,
     lineWidth: 1,
@@ -33,23 +33,22 @@ const props = {
     items: [
         {
             // image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
-            imageScale: 0.1,
+          imageScale:0.2,
             label: "Quà 1",
-            backgroundColor:"blue"
         },
         {
             // image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
-            imageScale: 0.1,
+          imageScale:0.2,
             label: "Quà 1"
         },
         {
             // image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
-            imageScale: 0.1,
+          imageScale:0.2,
             label: "Quà 1"
         },
         {
             // image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
-            imageScale: 0.1,
+          imageScale:0.2,
             label: "Quà 1"
         },
 
