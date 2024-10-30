@@ -1,7 +1,7 @@
 'use client'
-import { useWheel } from "@/hooks/useWheel";
-import { createElementImage } from "@/utils";
-import {FC, useEffect} from "react";
+import {useWheel} from "@/hooks/useWheel";
+import {createElementImage} from "@/utils";
+import {FC} from "react";
 
 const AlignText = Object.freeze({
     left: 'left',
