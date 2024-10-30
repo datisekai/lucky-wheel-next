@@ -1,5 +1,8 @@
+'use client'
 import React from 'react'
-import LuckyWheel from "@/components/LuckyWheel";
+import dynamic from "next/dynamic";
+
+const LuckyWheel = dynamic(() => import("@/components/LuckyWheel"), { ssr: false })
 
 const Home = () => {
   return (
