@@ -1,6 +1,8 @@
-export const createElementImage = (url: string) => {
-  const image = document.createElement("img");
-  image.src = url;
-
-  return image;
+export const createElementImage = (url: string): HTMLImageElement | null => {
+  if (typeof window !== 'undefined') {
+    const image = new Image();
+    image.src = url;
+    return image;
+  }
+  return null;
 };

@@ -1,8 +1,7 @@
 'use client'
 import { useWheel } from "@/hooks/useWheel";
 import { createElementImage } from "@/utils";
-import { FC } from "react";
-import { Wheel } from "spin-wheel";
+import {FC, useEffect} from "react";
 
 const AlignText = Object.freeze({
     left: 'left',
@@ -10,7 +9,6 @@ const AlignText = Object.freeze({
     center: 'center',
 });
 
-const randomizeNumber = (number: number) => Math.floor(Math.random() * number);
 
 const props = {
     name: 'Workout',
@@ -28,27 +26,29 @@ const props = {
     rotationSpeedMax: 500,
     rotationResistance: -100,
     lineWidth: 1,
+    debug:true,
     lineColor: '#fff',
     image: createElementImage("https://crazytim.github.io/spin-wheel/examples/themes/img/example-0-image.svg"),
     overlayImage: createElementImage("https://crazytim.github.io/spin-wheel/examples/themes/img/example-0-overlay.svg"),
     items: [
         {
-            image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
+            // image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
+            imageScale: 0.1,
+            label: "Quà 1",
+            backgroundColor:"blue"
+        },
+        {
+            // image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
             imageScale: 0.1,
             label: "Quà 1"
         },
         {
-            image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
+            // image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
             imageScale: 0.1,
             label: "Quà 1"
         },
         {
-            image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
-            imageScale: 0.1,
-            label: "Quà 1"
-        },
-        {
-            image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
+            // image: createElementImage("https://png.pngtree.com/png-clipart/20230105/original/pngtree-beautiful-pink-close-gift-box-png-image_8872744.png"),
             imageScale: 0.1,
             label: "Quà 1"
         },
