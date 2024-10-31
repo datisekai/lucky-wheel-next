@@ -32,7 +32,7 @@ export function useWheel({
           width: "100%",
           height: "100%",
         }}
-        // onClick={spinWheel}
+        onClick={spinWheel}
       />
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
