@@ -22,6 +22,9 @@ export function useWheel({
   }, [initialProps, wheelRef, wheel]);
 
   const wheelComponent = useMemo(() => {
+    const spinWheel = () => {
+      wheel!.spinToItem(0, 2000, true, 5);
+    };
     return (
       <div
         ref={wheelRef}
@@ -29,6 +32,7 @@ export function useWheel({
           width: "100%",
           height: "100%",
         }}
+        // onClick={spinWheel}
       />
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
