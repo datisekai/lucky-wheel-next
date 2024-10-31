@@ -10,7 +10,6 @@ const AlignText = Object.freeze({
   center: "center",
 });
 
-const randomizeNumber = (number: number) => Math.floor(Math.random() * number);
 
 const LuckyWheel: FC<any> = ({ props }: any) => {
   const { wheel, wheelComponent } = useWheel({

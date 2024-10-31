@@ -1,3 +1,4 @@
+'use client'
 import { Wheel, WheelProps } from "spin-wheel";
 import { useEffect, useMemo, useRef, useState } from "react";
 
